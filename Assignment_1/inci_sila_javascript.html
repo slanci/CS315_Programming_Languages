@@ -1,0 +1,45 @@
+<HTML>
+<HEAD>
+<TITLE>JavaScript Example</TITLE>
+
+<script>
+//question 1 & 7
+
+// var obj = [];  //putting string inside???
+// obj['a'] 'foo';
+// var y = obj.length;
+// alert(y);
+var names = ["Sila","Oguz","Feriha","Ilhan"];
+var firstName = names[0];
+alert(firstName);
+
+//question 2
+
+var lastName = names[4];
+alert(lastName); //undefined is output
+//question 3 & 4
+var heapDynamicArray = [[1],[2],[3]]; // you can access is until the program terminates
+
+//question 5
+var raggedArray = [[3],[3,5,7],[3,5,1,2],[1]]; // this is a ragged array
+alert(raggedArray);
+
+var recArray = [  // this is a rectangular array
+ 	[3,5],
+ 	[6,8],
+ 	[7,9]
+];
+
+alert(recArray);
+
+//question 6
+var multDimArray = [[3],[3,5,7],[3,5,1,2],[1],[5,6],[2],[6,8,9],[4]]; //mult dim array
+alert(multDimArray);
+
+//question 8
+var copy = names.slice(1,3); //Oguz, Feriha is output
+alert(copy);
+</script>
+
+</HEAD>
+</HTML>

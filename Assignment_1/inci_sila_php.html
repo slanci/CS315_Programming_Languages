@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<?php
+# question 1 & 7
+$plants = array("Peony", "Rose", "Maple", "Oak");
+echo "I like these plants " . $plants[0] . ", " . $plants[1] . ".\n";
+
+echo "Strings in subscripts can be used while creating associative arrays\n";
+
+$color = array("Peony" => "Pink", "Rose" => "Red", "Maple" => "Orange" , "Oak" => "Green");
+foreach($color as $m => $m_value)
+{
+	echo "Plant=" . $m . ", Color=" . $m_value;
+	echo "\n";
+}
+echo "--------------\n";
+# question 2
+echo "A warning is output when the subscript is out of range\n" ;
+echo $plants[4];  # Undefined offset range check warning/error
+echo "--------------\n";
+# question 3 & 4 & 5
+$multDimArr = array(
+	array(1,2,3),
+	array(4,5,6),
+	array(7,8,9)
+);
+for($layer = 0; $layer < 3; $layer++)
+{
+	for($dim = 0; $dim < 3; $dim++)
+	{
+		echo $multDimArr[$layer][$dim];
+	}
+	echo "\n";
+}
+echo "--------------\n";
+# question 6
+$threeDimArr = array(
+	array(
+		array(1,2,3),
+		array(1,2,3),
+		array(1,2,3)
+	),
+	array(
+		array(3,4,5),
+		array(3,4,5),
+		array(3,4,5)
+	),
+	array(
+		array(5,6,7),
+		array(5,6,7),
+		array(5,6,7)
+	)
+);
+for($dim = 0; $dim < 3; $dim++)
+{
+	for($layer = 0; $layer < 3; $layer++)
+	{
+		for($row = 0; $row < 3; $row++)
+		{
+			echo $threeDimArr[$dim][$layer][$row];
+		}
+		echo "\n";
+	}
+}
+echo "--------------\n";
+
+# question 8
+$slice = array_slice($plants, 0,2);
+print_r ($slice);
+echo "--------------\n";
+?>
+</body>
+</html>
+
+ 
